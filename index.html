@@ -82,7 +82,7 @@
     <div class="container">
       <h1>Contact</h1>
       <div class="block"></div>
-      <form>
+      <form action="send.php" method="POST">
         <div class="row">
           <div class="six columns">
             <label for="exampleRecipientInput">Name</label>
@@ -90,12 +90,12 @@
           </div>
           <div class="six columns">
             <label for="exampleEmailInput">Email</label>
-            <input class="u-full-width" type="email">
+            <input class="u-full-width" type="email" name="name">
           </div>
         </div>
         <div class="row">
           <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width"></textarea>
+          <textarea class="u-full-width" name="request"></textarea>
           <input class="button-primary" type="submit" value="Submit">
         </div>
       </form>
