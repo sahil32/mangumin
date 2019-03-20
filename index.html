@@ -77,12 +77,21 @@
   
   <!-- Contact Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+<?php
+$name=$_POST['name'];
+$request= $_POST['request'];
+
+$tc="sahilsubnani49@gmail.com";
+$subject="Request"
+$body="THis is an auto mated message please dont reply to this\n\n\n";
+mail($tc,$subject,$body);
+echo "lol"
+?>
   <section id="contact">
     <div class="container">
       <h1>Contact</h1>
       <div class="block"></div>
-      <form action="send.php" method="POST">
+      <form action="" method="POST">
         <div class="row">
           <div class="six columns">
             <label for="exampleRecipientInput">Name</label>
